@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0548916.css",
+    "main.js": "/static/js/main.cc415570.js",
+    "static/media/1242825.png": "/static/media/1242825.2c602e6e3f7e0de0d7c3.png",
+    "static/media/logobw.png": "/static/media/logobw.77cf7a97b2640e1e0f04.png",
+    "static/media/takemikey.webp": "/static/media/takemikey.a44e7e1d39e7420710d1.webp",
+    "index.html": "/index.html",
+    "main.e0548916.css.map": "/static/css/main.e0548916.css.map",
+    "main.cc415570.js.map": "/static/js/main.cc415570.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0548916.css",
+    "static/js/main.cc415570.js"
+  ]
+}
