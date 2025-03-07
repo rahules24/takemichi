@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
   min-height: 100vh;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  /* background: linear-gradient(40deg, rgba(129, 2, 255, 0.6), rgba(255, 8, 94, 0.01)); */
+}
+.nav-item {
+  margin: 0 10px; /* Space between items */
+  font-size: 26px;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link {
+  line-height: 60px;
+  padding: 0 15px;
+  color: rgb(155, 155, 155);
+}
+.nav-link:hover {
+  color: #fff;
+}
+.navbar .nav-link.active {
+  color: #fff !important; /* Ensure it takes precedence */
+}
+.accordion {
+  --bs-accordion-active-bg: rgba(0,0,0,0);
+  --bs-accordion-btn-focus-box-shadow:  rgba(0,0,0,0);
+  --bs-accordion-btn-color: #ffffff;
+  --bs-accordion-active-color:#ffffff;
+  --bs-accordion-bg::  rgba(0,0,0,0);
+  --bs-accordion-color::  rgba(0,0,0,0);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-item{
+  color: #ffffff;
+}
+
+.trinket-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 378px;
+  height: 410px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.button-rows {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.button-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: space-evenly; */
+  margin: 12px 0;
+}
+
+.neon-button {
+  background: transparent;
+  border: 2px solid #00ffff;
   color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: monospace;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+  min-width: 120px;
+  margin: 0 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.neon-button:hover {
+  box-shadow: 0 0 20px #ff00ff;
+  border-color: #ff00ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
